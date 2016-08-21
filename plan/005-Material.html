@@ -9,6 +9,24 @@
   <body class="xp-slide">
     <div class="xp-row with-comments">
       <div class="xp-column" style="width:100%">
+        <xp-editor active="tasks.md">
+          <script id="tasks.md" highlight>
+            #2/ Think of the best way to show required features of language / framework:
+            Usually on the slides we show other (very similar, yet simplified) app being developed.
+            It should have the same problems, but different domain.
+            -----------------------------------------------
+            #2/ Example
+            - Task: Shop app: Display list of products (feature: loop)
+            - Slides: Todo app: display list of tasks (feature: loop)
+            -----------------------------------------------
+            #4/ App on slides should be focused only on language / framework features
+            - Try to keep slides minimal - don't write the code just because you can.
+            - Comment the code - describe why you do something, the intention behind the code.
+            - Use single file (if possible) - don't jump between files, it's confusing.
+            - Keep the code inside visible area - scrolling when presenting is bad.
+            - Remember that most probably you will present on low-resolution beamer.
+          </script>
+        </xp-editor>
       </div>
     </div>
     <div class="xp-resize-row"></div>
@@ -17,8 +35,16 @@
         <header><h1>Material</h1></header>
         <details>
           <p>
-            Material should be a different/much simpler app (but similar).
-            Should be few slides + tasks to create an iteration.
+            Defining a tasks is obviously not enough.
+          </p>
+          <p>
+            You also need to explain features of language / framework to participants before they start doing them.
+          </p>
+          <p>
+            Tasks should be also related to presented material - participants should immediately see how to apply stuff you presented to solve the task.
+          </p>
+          <p>
+            First give them tools and inspire to solve the problems.
           </p>
         </details>
       </xp-annotations>

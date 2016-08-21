@@ -8,16 +8,57 @@
   </head>
   <body class="xp-slide">
     <div class="xp-row with-comments">
-      <div class="xp-column" style="width:100%">
+      <div class="xp-column">
+        <xp-editor active="tasks.md">
+          <script id="tasks.md" highlight src="004-tasks.md"></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-col"></div>
+      <div class="xp-column">
+        <div style="width: 80%;margin: 10% auto">
+          <h2>Tasks levels:</h2>
+          <ol>
+            <li>
+              <h4>Basic tasks (critical path, required)</h4>
+              <ul>
+                <li>each participant have to complete them</li>
+                <li>required to do tasks from next iteration</li>
+                <li>should be possible to do in 5-10 minutes</li>
+                <li>participants should do them as first</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Additional tasks (nice to have features)</h4>
+              <ul>
+                <li>additional tasks, within the scope of iteration</li>
+                <li>some additional features, more advanced usage</li>
+                <li>should require something more then copy-paste from materials</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Extra tasks (wow effect)</h4>
+              <ul>
+                <li>tasks beyond the scope of iteration (or even workshop)</li>
+                <li>can utilize features from next iteration (without properly introducing them)</li>
+                <li>can significantly extend functionality of the app</li>
+                <li>for very good, active participants</li>
+              </ul>
+        </div>
       </div>
     </div>
     <div class="xp-resize-row"></div>
     <div class="xp-row comments">
       <xp-annotations>
-        <header><h1>Tasks</h1></header>
+        <header><h1>Prepare tasks</h1></header>
         <details>
           <p>
-            Tasks levels, tasks scope
+            In each iteration you need to define what participants should do - what new features the app will have.
+          </p>
+          <p>
+            On <strong>each and every</strong> Devmeeting some participants will be able to do more/less than others - be prepared!
+          </p>
+          <p>
+            Tasks should be focused on app features, but should also always teach participants something about Devmeeting topic.
           </p>
         </details>
       </xp-annotations>
