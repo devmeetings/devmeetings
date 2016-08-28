@@ -1,9 +1,9 @@
 #8/ What worked?
 # Everyone understands what features are required, can be easily personalized
-Online Shop
+Online Shop (list products, filter, search, sort, cart)
 
 # Interesting domain (somehing that ppl do in their daily work)
-Ordering forms
+Ordering forms (live-validation, layout, error messages, dynamically generated)
 
 # Ok, but a bit boring/easy:
 Personal Tasks List / Time Tracker

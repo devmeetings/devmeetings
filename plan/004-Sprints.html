@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sprints</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-column" style="width:100%">
+        <xp-editor active="sprints.md">
+          <script id="sprints.md" highlight type="application/octetstream">
+            #5/ Example Sprints for Modern JavaScript for Backend Developers (App: Online Shop)
+            1. Display hardcoded list of products in HTML & CSS [no JS yet].
+            2. Generate a list of products in JS given an array of products.
+            3. Implement flexbox layout for products
+            4. Implement products filtering &amp; search.
+            5. Implement a persistent cart.
+
+            #10/ Example basic tasks for those sprints:
+            1. - Display single product in HTML and style it.
+               - Display many products.
+            2. - Generate single product in JS using DOM APIs.
+               - Generate products given an array of product-models.
+            3. - Display products in a grid
+               - Style the header of the shop
+            4. - Split your code into Model &amp; View using ES6 classes
+               - Implement search box, place logic inside Model class.
+            5. - Fetch products from JSON file
+               - Use LocalStorage to persist a cart
+          </script>
+        </xp-editor>
+      </div>
+      <div class="xp-column">
+        <div style="width: 80%;margin: 10% auto">
+          <h2>Couple of rules to have in mind when preparing Sprints:</h2>
+          <ol>
+            <li>
+              Allow people to make mistakes
+              <ul>
+                <li>Don't teach them everything right from the start,</li>
+                <li>Let them make something in a wrong way, to propose better solution in next Sprint.</li>
+              </ul>
+            </li>
+            <li>
+            Start small
+              <ul>
+                <li>First think about minimal app the is tangible (renders something)
+                    and define minimal set of language / framework features to achieve that,</li>
+                <li>Keep code at minimum - it's better to learn basic stuff correctly, don't re-write documentation.</li>
+              </ul>
+            </li>
+            <li>
+              Define critical path
+              <ul>
+                <li>What's minimal increment to be done in a step to be able to attempt next Sprint.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>Split Backlog into Sprints</h1></header>
+        <details>
+          <p>
+            So you already know that participants will write an app and have filled their Backlog.
+          </p>
+          <p>
+            We believe that the app should be developed Agile (Scrum-like) way.
+          </p>
+          <p>
+            App Backlog should be split into Sprints, each Sprint should result in Minimum Viable Product (MVP) and should also introduce and present some new features of language / framework (topic).
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+
