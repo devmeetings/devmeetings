@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preparation</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-column" style="width:100%">
+        <xp-editor active="material.md">
+          <script id="material.md" highlight type="text/markdown">
+            #9/ Couple of hints when preparing slides:
+            #2/ Try to keep slides minimal - don't write the code just because you can.
+              - Focus on the essence of what you want to present (but it has to be still runnable)
+              - Example: Avoid unnecessary styling, boilerplate code, etc.
+            #1/ Comment the code - describe why you do something, the intention behind the code.
+              - Comments should tell the story - imagine what you would say to your peer when explaining the code.
+            #2/ Use single file (if possible) - don't jump between files, it's confusing.
+              - Keep the code inside visible area - scrolling when presenting is bad.
+              - Remember that you will present on low-resolution beamer.
+            --------------
+            # See example here:
+            TODO [todr] Provide example
+          </script>
+        </xp-editor>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>How to prepare the materials?</h1></header>
+        <details>
+          <p>
+            There are two ways to prepare materials:
+          </p>
+          <ol>
+            <li>Write a second, greatly simplified App (Presentation App),</li>
+            <li>Prepare examples for each required feature.</li>
+          </ol>
+          <p>
+            It might be easier to prepare standalone examples (but they have to be minimal),
+            but Presentation App shows natural cycle of development and also keeps consistency between slides.
+          </p>
+          <p>
+            Remember that the slides should also be runnable; don't present snippets - you cannot play around with them or get the full picture.
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
