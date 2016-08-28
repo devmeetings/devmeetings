@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rows and Cols</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+    <style>.slide { height: 100%; width: 100%; font-size: 10vmin; }</style>
+  </head>
+  <body class="xp-slide">
+    <!-- `xp-row` defines a new row. `with-comments` changes the default height of 50% -->
+    <div class="xp-row with-comments">
+      <!-- To create a column use `xp-column`. -->
+      <div class="xp-column">
+        <!-- Inside a column you can put any content. -->
+        <div class="slide" style="background:#44f">Column A</div>
+      </div>
+      <!-- Use `xp-resize-column` to make columns resizable -->
+      <div class="xp-resize-column"></div>
+      <!-- Use in-line styles if you wish to change default distribution -->
+      <div class="xp-column" style="width: 50%">
+        <div class="slide" style="background:#4f4">Column B</div>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <!-- `xp-row comments` is used to write Slide caption (h1) -->
+    <div class="xp-row comments">
+      <div class="slide" style="background:#f44">Slide Description</div>
+    </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Editor</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-row">
+        <!-- Just open xp-editor tag -->
+        <xp-editor>
+          <!--10/ And define in-line script with content. Use `id` to name the file. -->
+          <!--- `type` is here just to prevent browser from running this script. -->
+          <script id="index.html" type="application/octetstream">
+            <html>
+              <head></head>
+              <body>
+                <h1>Hello World!</h1>
+              </body>
+            </html>
+          </script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-row"></div>
+      <div class="xp-row">
+        <!-- `active` allows you to change default file, `tree` displays a file tree. -->
+        <xp-editor tree active="subdir/slide.html">
+          <!-- You can also link content from separate files (recommended for non-trivial files). -->
+          <script id="editor.html" type="text/html" src="./logs.html"></script>
+          <script id="subdir/slide.html" type="text/html" src="./index.html"></script>
+        </xp-editor>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <h1>Simple Editor</h1>
+    </div>
+  </body>
+</html>
+
+

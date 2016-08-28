@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- `xp-run-server-url` specifies the server that will run the code -->
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preview</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row" style="height: 0%">
+      <!-- Place a editor with index.html file -->
+      <xp-editor active="index.html">
+        <script id="index.html" highlight type="text/html">
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <title>First App</title>
+          </head>
+          <body>
+            <h1>List of runners:</h1>
+            <dl>
+              <dt><code>html</code></dt>
+              <dd>Most basic runner - just serves all the files staticly (like a web server)</dd>
+              <dt><code>webpack</code></dt>
+              <dd>Executes `webpack` and serves all generated files.</dd>
+              <dt><code>html-jsx</code></dt>
+              <dd>Transpiles JSX files using Babel (index.jsx will be served as index.js)</dd>
+              <dt><code>html-babel</code></dt>
+              <dd>Transpiles all JS files using Babel</dd>
+              <dt><code>html-ts</code></dt>
+              <dd>Compiles Typescript files to JS (index.ts will be served as index.js)</dd>
+              <dt><code>java</code></dt>
+              <dd>Runs Java code (Main class)</dd>
+              <dt><code>python</code></dt>
+              <dd>Runs Python code</dd>
+              <dt><code>node</code></dt>
+              <dd>Runs nodejs code</dd>
+              <dt><code>go</code></dt>
+              <dd>Runs golang code</dd>
+            </dl>
+            <h3>Let us know if there is one missing for your Devmeeting.</h3>
+          </body>
+          </html>
+        </script>
+      </xp-editor>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row" style="height: 100%">
+      <!-- And use `xp-preview` tag to display preview. Alter `runner` to customize preview type -->
+      <xp-preview runner="html"></xp-preview>
+    </div>
+  </body>
+</html>
+
+

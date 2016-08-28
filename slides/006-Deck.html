@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Deck</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-column">
+        <xp-editor active="index.html">
+          <script id="index.html" highlight type="text/html" src="006/deck.html"></script>
+          <script id="slide.html" type="text/html" src="006/slide.html"></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-column"></div>
+      <div class="xp-column">
+        <xp-preview runner="html"></xp-preview>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>Deck</h1></header>
+        <details>
+          <p>
+            Ok, so we know how to create a Slide now.
+          </p>
+          <p>
+            Let's put together couple of Slides to create a Deck
+          </p>
+          <p>
+            Obviously it's also just a HTML file.
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hosting</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-column" style="width: 100%">
+        <xp-editor active="console.sh">
+          <script id="console.sh" type="text/bash" highlight>
+            # Create new repo
+            $ git init
+
+            # Add gitbub origin
+            $ git remote add origin <githuburl>
+
+            # Checkout `gh-pages` branch
+            $ git checkout -b gh-pages
+
+            # Create and add some Slides
+            $ git add .
+
+            #2/ Commit and push:
+            $ git commit -m "Slides ver.1"
+            $ git push -u origin gh-pages
+
+            # View your slides in a browser
+            $ open https://<account>.github.io/<repo>
+
+            #2/ For local development use any static-files server:
+            $ python -m SimpleHTTPServer
+            $ npm install -g live-server && live-server
+          </script>
+        </xp-editor>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>Hosting</h1></header>
+        <details>
+          <p>
+            Ok, so we have a bunch of static HTML files: Slides &amp; Decks.
+          </p>
+          <p>
+            You can use any static web server to host the slides (actually you could even generate them dynamically).
+          </p>
+          <p>
+            For convenience we recommend using <a href="https://pages.github.com/">Github Pages</a>.
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+
