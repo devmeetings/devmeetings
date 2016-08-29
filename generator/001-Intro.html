@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Generator</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-row">
+        <xp-editor active="index.html" tree>
+          <script id="index.html" highlight type="text/html" src="001/index.html"></script>
+          <script id="styles.css" highlight type="text/html" src="001/styles.css"></script>
+          <script id="index.js" highlight type="text/html" src="001/index.js"></script>
+          <script id="slide.html" highlight type="text/html" src="001/slide.html"></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-row"></div>
+      <div class="xp-row">
+        <xp-preview runner="html" file="slide.html"></xp-preview>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>Slides Generator - Intro</h1></header>
+        <details>
+          <p>
+            Creating slides manually might be difficult and time consuming.
+          </p>
+          <p>
+            We have prepared a tool to automatically generate slides from Git History.
+          </p>
+          <p>
+            So to prepare asingle slide you just need to write the code, comment it and make a commit.
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+

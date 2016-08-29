@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>First Slide</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-column">
+        <!-- 4/ Generated editor containing all the files -->
+        <xp-editor active="index.html">
+          <script id="index.html" highlight type="text/html" src="./index.html"></script>
+          <script id="styles.css" highlight type="text/html" src="./styles.css"></script>
+          <script id="index.js" highlight type="text/html" src="./index.js"></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-column"></div>
+      <div class="xp-column">
+        <!-- Preview with default HTML runner -->
+        <xp-preview runner="html"></xp-preview>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <!-- Commit message is used as caption and title -->
+      <h1>First Slide</h1>
+    </div>
+  </body>
+</html>
+
+
