@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Github</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <xp-editor>
+        <script id="console.sh" highlight type="text/markdown">
+          #2/ Initialize repository and add github remote
+          $ git init
+          $ git remote add origin <github-url>
+
+          # Create an empty `gh-pages` branch
+          $ git checkout -b gh-pages --orphan
+
+          # Make sure to push this branch - otherwise we won't be able to make a Pull Request for you.
+          $ git push -u origin gh-pages
+
+          #  Now you can use http://git.xpla.org
+          #- When you press "Generate" we will prepare a PR with the slides.
+        </script>
+      </xp-editor>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>Generating slides on Github</h1></header>
+        <details>
+          <p>
+            Since we are suggesting you to host your slides on Github Pages we can automatically generate slides for your Github repository.
+          </p>
+          <p>
+            Just push your code (you can have many branches) and generate slides using <a href="http://git.xpla.org/">git.xpla.org</a>
+          </p>
+          <p>
+            <small>
+              <strong>NOTE:</strong> you need to manually create `gh-pages` branch first!
+            </small>
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+

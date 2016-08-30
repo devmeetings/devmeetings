@@ -8,8 +8,31 @@
   </head>
   <body class="xp-slide">
     <div class="xp-row with-comments">
-      <div style="text-align:center; font-size: 8vmin; margin-top: 20vmin">
-        <a href="http://xpla.org/static/git-to-slides.tar.gz">Download Git-To-Slides</a>
+      <div class="xp-row" style="height: 70%">
+        <xp-editor>
+          <script id="console.sh" highlight type="text/markdown">
+            #2/ Download and extract Git-To-Slides
+            $ wget http://xpla.org/static/git-to-slides.tar.gz
+            $ tar xf git-to-slides.tar.gz
+
+            # Enter the directory
+            $ cd git-to-slides
+
+            # Install dependencies
+            $ npm install
+
+            #2/ Run in watch mode with live-reload server.
+            #-- It will re-generate slides on each change in your project. 
+            $ npm start ../relative/path/to/project
+
+          </script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-row"></div>
+      <div class="xp-row" style="height: 30%">
+        <div style="text-align:center; font-size: 6vmin; margin-top: 6vmin">
+          <a href="http://xpla.org/static/git-to-slides.tar.gz">Download Git-To-Slides</a>
+        </div>       
       </div>
     </div>
     <div class="xp-resize-row"></div>
@@ -17,6 +40,8 @@
       <xp-annotations>
         <header><h1>Where to get the generator from?</h1></header>
         <details>
+          <p>
+            You can also generate slides manually, to 
           <p>
             You can download the generator from here: <a href="http://xpla.org/static/git-to-slides.tar.gz">Git-To-Slides</a>.
           </p>
