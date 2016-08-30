@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- This part is taken from commit message in square brackets -->
+    <title>Slide Name</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-column">
+        <!--3/ Those files are part of your commit - special files are ignored -->
+        <xp-editor active="main.java">
+          <script id="main.java" type="text/java" src="Main.java"></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-column"></div>
+      <div class="xp-column">
+        <!-- Runner was customized by _xp-runner file -->
+        <xp-preview runner="java"></xp-preview>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+      <!-- This is a commit message: `Long Message - Caption [Slide Name]` -->
+        <header><h1>Long Message - Caption</h1></header>
+        <details>
+          <h1>Have a look at Hello World example in Java</h1>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>

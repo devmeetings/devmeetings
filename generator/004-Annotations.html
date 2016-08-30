@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Annotations</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+  </head>
+  <body class="xp-slide">
+    <div class="xp-row with-comments">
+      <div class="xp-col">
+        <xp-editor>
+          <script id="_annotations.html" highlight type="text/html">
+            <!--3/ Place any content inside details tag -->
+            <details>
+              <h1>Have a look at Hello World example in Java</h1>
+            </details>
+          </script>
+          <script id="_xp-runner" highlight type="text/html">
+            java
+          </script>
+          <script id="Main.java" highlight type="text/java" src="004/Main.java"></script>
+        </xp-editor>
+      </div>
+      <div class="xp-resize-col"></div>
+      <div class="xp-col">
+        <div class="xp-row">
+          <xp-editor>
+            <script id="index.html" highlight type="text/html" src="004/index.html"></script>
+          </xp-editor>
+        </div>
+        <div class="xp-resize-row"></div>
+        <div class="xp-row">
+          <xp-preview runner="html"></xp-preview>
+        </div>
+      </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+      <xp-annotations>
+        <header><h1>Annotations</h1></header>
+        <details>
+          <p>
+            To create a walk-through on the slide you just need to put comments in files you alter.
+          </p>
+          <p>
+            If you wish to create intro popup commit special file named <code>_annotations.html</code>
+          </p>
+          <p>
+            You can also use special commit message format <code>Long Message - Caption [Slide Name]</code>.
+          </p>
+        </details>
+      </xp-annotations>
+    </div>
+  </body>
+</html>
+
+
