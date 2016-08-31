@@ -14,11 +14,9 @@
           $ git init
           $ git remote add origin <github-url>
 
-          # Create an empty `gh-pages` branch
-          $ git checkout -b gh-pages --orphan
-
-          # Make sure to push this branch - otherwise we won't be able to make a Pull Request for you.
-          $ git push -u origin gh-pages
+          #2/ Create and push `gh-pages` branch
+          #-- Otherwise we won't be able to make a Pull Request for you.
+          $ git push origin master:refs/heads/gh-pages
 
           #  Now you can use http://git.xpla.org
           #- When you press "Generate" we will prepare a PR with the slides.
