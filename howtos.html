@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meta Devmeeting</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="https://xpla.org/static/css/deck.3.0.0.css">
+    <style>
+      body {
+        margin: 5rem;
+      }
+    </style>
+    <script src="tracking.js"></script>
+  </head>
+  <body style="text-align: center">
+    <div style="min-width: 60vw; margin: 0 auto; display:inline-block; width: auto;text-align: left">
+      <h1 style="text-align: center">How to?</h1>
+      <h3 style="text-align: center; color: #aaa;">Frequently Asked Questions</h3>
+      <h3>How to add link to agenda in deck?</h4>
+      <p>
+        Use <code>&lt;xp-deck back="../"&gt;</code> to add a back link before first slide.
+      </p>
+      <h3>How to change the page that is displayed in preview?</h3>
+      <p>
+        Create &amp; commit <code>/_xp-preview-file</code> with path to <code>index.html</code>. <br>
+        Example: <code>$ echo "dist/index.html" > _xp-preview-file</code>
+      </p>
+      <h3>How to modify runner when generating slides?</h3>
+      <p>
+        Create &amp; commit <code>/_xp-runner</code> file with runner name inside it.<br>
+        Example: <code>$ echo "webpack" > _xp_runner</code>
+      </p>
+      <h3>How to display files in a tree?</h3>
+      <p>
+        Create &amp; commit empty <code>/_xp-tree</code> file.
+      </p>
+    </div>
+  </body>
+</html>
